@@ -40,7 +40,7 @@ def increment_by_10():
     turns += 1
   if turns == 10:
     x == False
-    increment_by_five()
+    return 'False'
 
 def increment_by_five():
   y = True
@@ -49,8 +49,12 @@ def increment_by_five():
     return 'b'
     turn += 1
   if turn == 5:
+    return 'False'
     y == False    
     increment_by_10()
 
-    
+if increment_by_10() == 'False':
+  increment_by_five()
+
+  
     
