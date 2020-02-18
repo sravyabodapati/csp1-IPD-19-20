@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Cash'
+team_name = 'E4'
 strategy_name = 'Use early history'
 strategy_description = '''\
 Collude first round. Compare all rounds to the previous round and 
@@ -47,4 +47,3 @@ def move(my_history, their_history, my_score, their_score):
             return 'b' # Betray if they were severely punished last time
         else:
             return 'c' # Otherwise collude.
-

@@ -5,7 +5,7 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-import random
+
 team_name = 'E2'
 strategy_name = 'Alternate'
 strategy_description = 'Collude, then alternate.'
@@ -25,6 +25,4 @@ def move(my_history, their_history, my_score, their_score):
         return 'c'
     else:
         return 'b'
-def move(my_history, their_history, my_score, their_score):
-  history = random.choice('c', 'b')
-  #their_history = 
+    
