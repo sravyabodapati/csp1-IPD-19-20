@@ -25,6 +25,3 @@ def move(my_history, their_history, my_score, their_score):
         return 'c'
     else:
         return 'b'
-def move(my_history, their_history, my_score, their_score):
-  history = random.choice('c', 'b')
-  #their_history = 

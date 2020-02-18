@@ -5,11 +5,11 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-
+import random
 team_name = 'E0'
 strategy_name = 'Collude'
 strategy_description = 'Always collude.'
-    
+  
 def move(my_history, their_history, my_score, their_score):
     '''Make my move based on the history with this player.
     
@@ -20,7 +20,7 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
-    
-    # This player always colludes.
     return 'c'
+    # This player always colludes.
+   
     
