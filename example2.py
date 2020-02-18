@@ -27,4 +27,4 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
 def move(my_history, their_history, my_score, their_score):
   history = random.choice('c', 'b')
-  their
+  #their_history = 
