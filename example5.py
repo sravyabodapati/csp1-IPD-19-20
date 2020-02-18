@@ -12,8 +12,9 @@ strategy_description = '''Follows a pattern. Collude for the first ten. Betray f
 '''
 
 import random
-    
+
 def move(my_history, their_history, my_score, their_score):
+    
     '''Make my move based on your own pattern and based on what turn it is on.
     
     history: a string with one letter (c or b) per round that has been played with this opponent.
@@ -24,11 +25,32 @@ def move(my_history, their_history, my_score, their_score):
     Returns 'c' or 'b' for collude or betray.
     '''
     # If the other player has betrayed or this is the last half of the game, 
-    for char in their_history:
-      if char in their_history or len(their_history)>100: 
-        return 'b'               # Betray.
-      else:
-        return 'c'         # but 90% of the time collude
+    #for char in their_history:
+      #if char in their_history or len(their_history)>100: 
+       # return 'b'               # Betray.
+  #  else:
+    #   return 'c'   
     
+    
+def increment_by_10():
+  turns = 0
+  x = True
+  while x == True:
+    return 'c'
+    turns += 1
+  if turns == 10:
+    x == False
+    increment_by_five()
+
+def increment_by_five():
+  y = True
+  turn = 0
+  while y == True:
+    return 'b'
+    turn += 1
+  if turn == 5:
+    y == False    
+    increment_by_10()
+
     
     

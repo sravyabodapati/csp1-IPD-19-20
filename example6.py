@@ -9,10 +9,10 @@
 team_name = 'Cash'
 strategy_name = 'Collude until betrayed'
 strategy_description = '''\
-Collude first round. Collude, unless betrayed; then always betray.'''
+Collude first round. Collude, unless betrayed; then betray until they collude.'''
     
 def move(my_history, their_history, my_score, their_score):
-    '''Make my move based on the history with this player.
+    '''Make my move based on the player's move.
     
     history: a string with one letter (c or b) per round that has been played with this opponent.
     their_history: a string of the same length as history, possibly empty. 
@@ -21,7 +21,12 @@ def move(my_history, their_history, my_score, their_score):
     
     Returns 'c' or 'b' for collude or betray.
     '''
-    if 'b' in their_history:
+  for char in their_history:  
+    if char == 'b':
         return 'b'
+        if len(their_history - 1) == 'c'
+        return 'c'
     else:
         return 'c'
+    
+    
