@@ -6,25 +6,24 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'E3'
-strategy_name = 'Collude but retaliate'
-strategy_description = '''\
-Collude first round. Collude, except in a round after getting 
-a severe punishment.'''
+
+    
+team_name = 'yeee'
+strategy_name = 'Make decision if there are more betrays then colludes'
+strategy_description = 'Okay so basically this fucntion will give b and c a value of 0 and if thier history has a value that is higher then the value of collude, it will return likewise.' 
+
+import random
     
 def move(my_history, their_history, my_score, their_score):
-    '''Make my move based on the history with this player.
-    
-    history: a string with one letter (c or b) per round that has been played with this opponent.
-    their_history: a string of the same length as history, possibly empty. 
-    The first round between these two players is my_history[0] and their_history[0]
-    The most recent round is my_history[-1] and their_history[-1]
-    
-    Returns 'c' or 'b' for collude or betray.
-    '''
-    if len(my_history)==0: # It's the first round; collude.
-        return 'c'
-    elif my_history[-1]=='c' and their_history[-1]=='b':
-        return 'b' # Betray if they were severely punished last time,
+    b = 0 
+    c = 0
+    for letter in their_history:
+      if letter == 'b':
+        b += 1
+    for letter in their_history:
+      if letter == 'c':
+       c += 1
+    if b > c:
+      return 'b'
     else:
-        return 'c' # otherwise collude.
+      return 'c'
