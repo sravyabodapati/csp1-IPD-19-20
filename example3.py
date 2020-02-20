@@ -10,7 +10,7 @@
     
 team_name = 'Cash'
 strategy_name = 'Make decision if there are more betrays then colludes'
-strategy_description = 'Okay so basically this fucntion will give b and c a value of 0 and if thier history has a value that is higher then the value of collude, it will return likewise.' 
+strategy_description = 'This function will give b and c a value of 0 and if their history has a value that is higher then the value of collude, it will return likewise.' 
 
 import random
     
