@@ -6,8 +6,8 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'REEEEEEE'
-stratrgy_name = 'e'
+team_name = 'Cash'
+strategy_name = 'e'
 strategy_description = "Betray if oppponent has betrayed more than half the time"
 
 def move(my_history, their_history, my_score, their_score):
